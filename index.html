@@ -26,6 +26,11 @@ header {
   color: white;
   padding: 90px 20px;
   text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* ← これが重要 */
+  justify-content: center;
 }
 
 header img {
@@ -183,13 +188,13 @@ footer {
 
 <body>
 
+<div class="container">
+
 <header>
     <img src="logo.png" alt="ハシコウ ロゴ">
     <h1>広島の軽貨物配送ならハシコウ</h1>
     <p>チャーター便・定期便・建築資材配送対応｜迅速・丁寧・時間厳守</p>
 </header>
-
-<div class="container">
 
 <section>
   <h2>事業内容</h2>
