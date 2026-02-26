@@ -8,127 +8,83 @@
 <style>
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
   margin: 0;
-  background-color: #f0f2f5;
+  background-color: #f4f6f9;
+  color: #333;
 }
 
 .container {
   width: 90%;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
 /* ===== ヘッダー ===== */
 header {
-  background: linear-gradient(135deg, #002244, #0055aa);
+  background: linear-gradient(135deg, #0d3b66, #145da0);
   color: white;
-  padding: 70px 20px 80px 20px;
+  padding: 90px 20px;
   text-align: center;
 }
 
-/* ロゴ超目立たせ */
-
 header img {
-  width: 420px;
+  width: 360px;
   max-width: 95%;
-  margin-bottom: 25px;
-  padding: 25px;
-  border-radius: 15px;
-  background: white;   /* ← 真っ白に変更 */
-  box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+  margin-bottom: 40px;
+  padding: 30px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.3);
 }
 
 header h1 {
-  font-size: 34px;
-  margin: 10px 0;
+  font-size: 36px;
+  margin: 0 0 20px 0;
 }
 
 header p {
   font-size: 18px;
-  opacity: 0.9;
+  opacity: 0.95;
 }
 
 /* ===== セクション ===== */
 section {
   background: white;
-  margin: 40px 0;
-  padding: 40px;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  margin: 50px 0;
+  padding: 50px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
 }
 
 h2 {
-  border-left: 6px solid #0055aa;
-  padding-left: 10px;
-  margin-bottom: 20px;
+  border-left: 6px solid #145da0;
+  padding-left: 12px;
+  margin-bottom: 30px;
+  font-size: 24px;
 }
 
-/* リスト装飾 */
-ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-ul li {
-  margin-bottom: 10px;
-  font-size: 17px;
-}
-
-ul li::before {
-  content: "✓";
-  color: #0055aa;
-  font-weight: bold;
-  margin-right: 10px;
-}
-
-/* ===== ボタン ===== */
-a {
-  display: inline-block;
-  text-decoration: none;
-  color: white;
-  background-color: #d9534f;
-  padding: 15px 35px;
-  border-radius: 50px;
-  font-weight: bold;
-  transition: all 0.3s ease;
-  box-shadow: 0 5px 18px rgba(0,0,0,0.2);
-}
-
-a:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.35);
-}
-
-/* ===== フッター ===== */
-footer {
-  text-align: center;
-  padding: 30px 0;
-  background-color: #002244;
-  color: white;
-  margin-top: 40px;
-}
-
+/* ===== サービス横並び ===== */
 .service-box {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 50px;
-  flex-wrap: wrap; /* スマホ対応 */
+  gap: 60px;
+  flex-wrap: wrap;
 }
 
 .service-text {
   flex: 1;
+  min-width: 280px;
 }
 
 .service-text h3 {
-  font-size: 24px;
-  margin-bottom: 15px;
+  font-size: 26px;
+  margin-bottom: 20px;
 }
 
 .service-text p {
-  margin-bottom: 20px;
-  line-height: 1.8;
+  line-height: 1.9;
+  margin-bottom: 25px;
 }
 
 .service-text ul {
@@ -141,11 +97,85 @@ footer {
   margin-bottom: 12px;
 }
 
+.service-text li::before {
+  content: "✓";
+  color: #145da0;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
 .service-image {
-  width: 320px;
+  width: 350px;
   max-width: 100%;
-  border-radius: 15px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  border-radius: 18px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+/* ===== 通常リスト ===== */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+ul li::before {
+  content: "✓";
+  color: #145da0;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* ===== ボタン ===== */
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(135deg, #ff4d4d, #d90429);
+  padding: 18px 45px;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: 0.3s ease;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+a:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+}
+
+/* ===== フッター ===== */
+footer {
+  text-align: center;
+  padding: 40px 0;
+  background-color: #0d3b66;
+  color: white;
+  margin-top: 60px;
+  font-size: 14px;
+}
+
+/* ===== スマホ最適化 ===== */
+@media (max-width: 768px) {
+
+  header {
+    padding: 70px 20px;
+  }
+
+  header h1 {
+    font-size: 28px;
+  }
+
+  section {
+    padding: 35px 25px;
+  }
+
+  .service-box {
+    flex-direction: column;
+  }
+
 }
 
 </style>
@@ -157,7 +187,6 @@ footer {
 
 <header>
     <img src="logo.png" alt="ハシコウ ロゴ">
-
     <h1>広島の軽貨物配送ならハシコウ</h1>
     <p>チャーター便・定期便・建築資材配送対応｜迅速・丁寧・時間厳守</p>
 </header>
@@ -220,25 +249,20 @@ footer {
 
 <section>
   <h2>業務委託ドライバー募集</h2>
-  <p>現在、業務拡大につき業務委託ドライバーを募集しています。</p>
   <ul>
     <li>午前便あり</li>
     <li>安定案件あり</li>
     <li>やる気重視</li>
   </ul>
-  <p>興味のある方はお問い合わせください。</p>
 </section>
 
-<section style="text-align: center; border: 2px solid #0055aa;">
+<section style="text-align:center;">
     <h2>お問い合わせ</h2>
     <p>
-    配送のご依頼、お見積り、ドライバー応募など<br>
+    配送のご依頼・お見積り・ドライバー応募など<br>
     まずはお気軽にご連絡ください。
     </p>
     <a href="mailto:hashikou@ymail.ne.jp">✉ メールで問い合わせる</a>
-    <p style="font-size: 12px; margin-top: 15px; color: #666;">
-        ※24時間受付中（順次回答いたします）
-    </p>
 </section>
 
 <footer>
