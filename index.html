@@ -3,9 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ハシコウ軽貨物| 広島 軽貨物配送</title>
+<title>広島の軽貨物配送ならハシコウ｜定期便・建築資材対応</title>
 
 <style>
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -14,53 +15,66 @@ body {
 
 .container {
   width: 90%;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
+/* ===== ヘッダー ===== */
 header {
-  background: linear-gradient(90deg, #003366, #0055aa);
+  background: linear-gradient(135deg, #002244, #0055aa);
   color: white;
-  padding: 80px 0;
+  padding: 70px 20px 80px 20px;
   text-align: center;
 }
 
-h1 {
-  margin: 0;
-  font-size: 40px;
+/* ロゴ超目立たせ */
+
+header img {
+  width: 420px;
+  max-width: 95%;
+  margin-bottom: 25px;
+  padding: 25px;
+  border-radius: 15px;
+  background: white;   /* ← 真っ白に変更 */
+  box-shadow: 0 15px 35px rgba(0,0,0,0.4);
 }
 
+header h1 {
+  font-size: 34px;
+  margin: 10px 0;
+}
+
+header p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* ===== セクション ===== */
 section {
   background: white;
   margin: 40px 0;
   padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
 
 h2 {
   border-left: 6px solid #0055aa;
   padding-left: 10px;
+  margin-bottom: 20px;
 }
 
-a {
-  display: inline-block;
-  text-decoration: none;
-  color: white;
-  background-color: #0055aa;
-  padding: 12px 25px;
-  border-radius: 6px;
-  margin-top: 15px;
-}
-
-a:hover {
-  opacity: 0.8;
-}
-/* リストの黒丸を消して、青いチェックマークにする */
+/* リスト装飾 */
 ul {
   list-style: none;
   padding-left: 0;
 }
+
+ul li {
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+
 ul li::before {
   content: "✓";
   color: #0055aa;
@@ -68,28 +82,73 @@ ul li::before {
   margin-right: 10px;
 }
 
-/* お問い合わせボタンを「ボタンらしく」する */
+/* ===== ボタン ===== */
 a {
   display: inline-block;
   text-decoration: none;
   color: white;
-  background-color: #d9534f; /* 目立つように赤系に変更 */
-  padding: 15px 30px;
-  border-radius: 50px; /* 角を丸く */
+  background-color: #d9534f;
+  padding: 15px 35px;
+  border-radius: 50px;
   font-weight: bold;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 18px rgba(0,0,0,0.2);
 }
 
-/* マウスを乗せた時の動き */
 a:hover {
   transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
-  opacity: 1;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+}
+
+/* ===== フッター ===== */
+footer {
+  text-align: center;
+  padding: 30px 0;
+  background-color: #002244;
+  color: white;
+  margin-top: 40px;
+}
+
+.service-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: wrap; /* スマホ対応 */
+}
+
+.service-text {
+  flex: 1;
+}
+
+.service-text h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.service-text p {
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+.service-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.service-text li {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.service-image {
+  width: 320px;
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
 </style>
-
 </head>
 
 <body>
@@ -97,23 +156,38 @@ a:hover {
 <div class="container">
 
 <header>
-    <p style="font-size: 14px; opacity: 0.9; margin-bottom: 5px;">広島の地場配送・建築資材なら</p>
-    <h1>ハシコウ</h1>
-    <p>広島市・廿日市市・大竹市を中心に、迅速・丁寧に配送いたします</p>
+    <img src="logo.png" alt="ハシコウ ロゴ">
+
+    <h1>広島の軽貨物配送ならハシコウ</h1>
+    <p>チャーター便・定期便・建築資材配送対応｜迅速・丁寧・時間厳守</p>
 </header>
 
 <section>
-    <h2>事業内容</h2>
-    <ul>
+  <h2>事業内容</h2>
+
+  <div class="service-box">
+
+    <div class="service-text">
+      <h3>安定した配送サービス</h3>
+      <p>
+        企業様向けの定期便・チャーター便・建築資材配送を中心に、
+        迅速かつ丁寧な対応を徹底しております。
+      </p>
+
+      <ul>
         <li>企業定期便</li>
-        <li>スポット便</li>
         <li>チャーター便</li>
         <li>建築資材配送</li>
-    </ul>
+      </ul>
+    </div>
+
+    <img src="van.jpg" alt="ハシコウ軽バン" class="service-image">
+
+  </div>
 </section>
 
 <section>
-    <h2>強み</h2>
+    <h2>ハシコウの強み</h2>
     <ul>
         <li>午前便対応可能</li>
         <li>時間厳守・丁寧な配送</li>
@@ -130,8 +204,9 @@ a:hover {
 <section>
     <h2>代表挨拶</h2>
     <p>
-    広島で軽貨物配送を行っております。  
-    誠実・迅速な対応を心がけ、長期的にお付き合いできる企業様とのご縁を大切にしております。
+    広島で軽貨物配送を行っております。<br><br>
+    定期便・建築資材配送を中心に、時間厳守と安定稼働を徹底しています。<br><br>
+    「任せてよかった」と言っていただける配送をお約束します。
     </p>
 </section>
 
@@ -142,20 +217,28 @@ a:hover {
   <p>所在地：広島県</p>
   <p>事業内容：軽貨物配送</p>
 </section>
+
 <section>
   <h2>業務委託ドライバー募集</h2>
-  <p>現在、業務拡大につき外注ドライバーを募集しています。</p>
-  <p>・午前便あり</p>
-  <p>・安定案件あり</p>
-  <p>・やる気重視</p>
+  <p>現在、業務拡大につき業務委託ドライバーを募集しています。</p>
+  <ul>
+    <li>午前便あり</li>
+    <li>安定案件あり</li>
+    <li>やる気重視</li>
+  </ul>
   <p>興味のある方はお問い合わせください。</p>
 </section>
 
 <section style="text-align: center; border: 2px solid #0055aa;">
     <h2>お問い合わせ</h2>
-    <p>配送のご依頼、お見積り、ドライバー応募など<br>まずはお気軽にご連絡ください。</p>
+    <p>
+    配送のご依頼、お見積り、ドライバー応募など<br>
+    まずはお気軽にご連絡ください。
+    </p>
     <a href="mailto:hashikou@ymail.ne.jp">✉ メールで問い合わせる</a>
-    <p style="font-size: 12px; margin-top: 15px; color: #666;">※24時間受付中（順次回答いたします）</p>
+    <p style="font-size: 12px; margin-top: 15px; color: #666;">
+        ※24時間受付中（順次回答いたします）
+    </p>
 </section>
 
 <footer>
